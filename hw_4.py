@@ -146,8 +146,8 @@ class TestAllMethods(unittest.TestCase):
 		self.f2.make_order(self.s2, 30)
 
 		# See if money has changed hands
-		self.assertEqual(self.f2.wallet, previous_wallet_customer - 36)
-		self.assertEqual(self.s2.money, previous_money_server + 36)
+		self.assertEqual(self.f2.wallet, previous_wallet_customer - 30)
+		self.assertEqual(self.s2.money, previous_money_server + 30)
 
 
 	# Check to see that the server can serve from the different trucks
